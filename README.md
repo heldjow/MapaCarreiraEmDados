@@ -24,11 +24,19 @@ Projeto construído durante a imersão em dados com python pela Alura. Nesse pro
 
 ## **⚡ Como rodar na sua máquina**
 
-1. Crie o ambiente virtual
+1. Baixe a base de dados [df_limpo](https://colab.research.google.com/drive/1hRJZqk24GtUbjsYjKeIPOXWUdySHEOt5?usp=sharing) e o código python [app.py](https://colab.research.google.com/drive/1hRJZqk24GtUbjsYjKeIPOXWUdySHEOt5?usp=sharing) e salve-os na mesma pasta.
+
+2. Opção 2: Clone esse repositório
+
+Execute o terminal da sua maquina (```Pressione a tecla super🪟 e digite "terminal"```) e execute o seguinte comando
+
+```git clone https://github.com/heldjow/ImersaoDadosAlura```
+
+3. Crie o ambiente virtual
 
 ```python3 -m venv venv```
 
-2. Ative o ambiente virtual em Windonws
+4. Ative o ambiente virtual em Windonws
 
 ```.venv\Scripts\Activate```
 
@@ -36,7 +44,7 @@ Em Linux/MacOS
 
 ```source .venv/bin/activate```
 
-3. Crie um arquivo chamado requirements.txt e escreva o seguinte texto nele:
+5. Crie um arquivo chamado requirements.txt e escreva o seguinte texto nele:
 
 ```
 pandas==2.2.3
@@ -44,15 +52,15 @@ streamlit==1.44.1
 plotly==5.24.1]
 ```
 
-4. Instale as bibliotecas nescessárias
+6. Instale as bibliotecas nescessárias
 
 ```pip -install -r requirements```
 
-5. Execute o código no ambiente virtual
+7. Execute o código no ambiente virtual
 
 ```streamlit run app.py```
 
-6. Realize o deploy na nuvem 
+8. Realize o deploy na nuvem 
 
 Acesse o site do streamlit e associe a sua conta do github em deploy Free (Login with in github)
 
