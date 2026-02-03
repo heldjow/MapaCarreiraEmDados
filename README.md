@@ -25,7 +25,7 @@ Projeto construído durante a imersão em dados com python pela Alura. Nesse pro
 
 ## **⚡ Como rodar na sua máquina**
 
-1. Baixe a base de dados [df_limpo]([https://colab.research.google.com/drive/1hRJZqk24GtUbjsYjKeIPOXWUdySHEOt5?usp=sharing](https://github.com/heldjow/ImersaoDadosAlura/blob/main/df_limpo.csv)) e o código python [app.py](https://colab.research.google.com/drive/1hRJZqk24GtUbjsYjKeIPOXWUdySHEOt5?usp=sharing) e salve-os na mesma pasta.
+1. Baixe a base de dados [df_limpo](https://github.com/heldjow/ImersaoDadosAlura/blob/main/df_limpo.csv) e o código python [app.py](https://colab.research.google.com/drive/1hRJZqk24GtUbjsYjKeIPOXWUdySHEOt5?usp=sharing) e salve-os na mesma pasta.
 
 2. Opção 2: Clone esse repositório
 
