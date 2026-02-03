@@ -20,11 +20,12 @@ Projeto construído durante a imersão em dados com python pela Alura. Nesse pro
 
 1. Toda exploração, tratamento e limpeza dos dados foi feita no google collab, pois é de fácil acesso e não gasta processamento nem memória da minha máquina, além de grande parte das bibliotecas são instaladas por default. [Google Collab](https://colab.research.google.com/drive/1hRJZqk24GtUbjsYjKeIPOXWUdySHEOt5?usp=sharing).
 2. Para ter acesso ao dataframe tratado e limpo, baixe por aqui ou execute o código do collab que ele vai gerar o csv no final.
+![Texto Alternativo](https://github.com/heldjow/ImersaoDadosAlura/blob/main/img/img1.png)
 3. Dashboards interativos feitos no streamlit, mais informações na próxima sessão.
 
 ## **⚡ Como rodar na sua máquina**
 
-1. Baixe a base de dados [df_limpo](https://colab.research.google.com/drive/1hRJZqk24GtUbjsYjKeIPOXWUdySHEOt5?usp=sharing) e o código python [app.py](https://colab.research.google.com/drive/1hRJZqk24GtUbjsYjKeIPOXWUdySHEOt5?usp=sharing) e salve-os na mesma pasta.
+1. Baixe a base de dados [df_limpo]([https://colab.research.google.com/drive/1hRJZqk24GtUbjsYjKeIPOXWUdySHEOt5?usp=sharing](https://github.com/heldjow/ImersaoDadosAlura/blob/main/df_limpo.csv)) e o código python [app.py](https://colab.research.google.com/drive/1hRJZqk24GtUbjsYjKeIPOXWUdySHEOt5?usp=sharing) e salve-os na mesma pasta.
 
 2. Opção 2: Clone esse repositório
 
