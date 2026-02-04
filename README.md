@@ -1,74 +1,160 @@
+# 📊 Mapa Carreira em Dados
 
-# Imersão de dados alura
+Projeto criado para responder à pergunta:
 
-Projeto construído durante a imersão em dados com python pela Alura. Nesse projeto pude recapitular e aprender a realizar um projeto de análise de dados. Desde a filtragem e tratamento dos dados até a realização de gráficos e dashboards interativos no streamlit.
+> **Quais informações são relevantes para quem deseja iniciar ou migrar para a área de Dados?**
 
-## 📖 Sumário
+A partir de uma base pública sobre salários e perfis profissionais da área, este projeto percorre **todo o ciclo de um projeto real de dados**:
 
-1. [✨ Funcionalidades ](#-funcionalidades)
-2. [🛠️ Instalação local](#-instalaçao-local)
-3. [⚡ Como rodar na sua máquina](#-como-rodar-na-sua-máquina)
+**Extração → Limpeza → Transformação → Análise → Visualização → Deploy**
 
+A entrega final é um **dashboard interativo em Streamlit**, publicado na nuvem.
 
-## **✨ Funcionalidades**
+🔗 **Acesse a aplicação online:** *(coloque aqui o link do seu deploy)*
 
-- **🐼 Exploração dos dados com a biblioteca pandas**: importação dos dados, estatisticas das variaveis quantitativas e qualitativas, tradução dos termos e destrinchamento das siglas.
-- **🧹 Tratamento e limpeza dos dados**: conversão de variaveis, limpeza de dados nulos.
-- **🔍 Dashboards interativos**: análise exploratória, insights e apresentação interativa das informações.
+---
 
-## **🛠️ Instalação local**
+## 🎯 Objetivo do Projeto
 
-1. Toda exploração, tratamento e limpeza dos dados foi feita no google collab, pois é de fácil acesso e não gasta processamento nem memória da minha máquina, além de grande parte das bibliotecas são instaladas por default. [Google Collab](https://colab.research.google.com/drive/1hRJZqk24GtUbjsYjKeIPOXWUdySHEOt5?usp=sharing).
-2. Para ter acesso ao dataframe tratado e limpo, baixe por aqui ou execute o código do collab que ele vai gerar o csv no final.
-![Texto Alternativo](https://github.com/heldjow/ImersaoDadosAlura/blob/main/img/img1.png)
-3. Dashboards interativos feitos no streamlit, mais informações na próxima sessão.
+Demonstrar, na prática, como um projeto de dados é construído desde os dados brutos até a geração de valor em forma de dashboard analítico.
 
-## **⚡ Como rodar na sua máquina**
+Este projeto também serve como base para evoluções arquiteturais mais avançadas, como SQL, Data Warehouse e Modelagem Dimensional.
 
-1. Baixe a base de dados [df_limpo](https://github.com/heldjow/ImersaoDadosAlura/blob/main/df_limpo.csv) e o código python [app.py](https://colab.research.google.com/drive/1hRJZqk24GtUbjsYjKeIPOXWUdySHEOt5?usp=sharing) e salve-os na mesma pasta.
+---
 
-2. Opção 2: Clone esse repositório
+## 🧱 Arquitetura do Projeto — v1.0 (Atual)
 
-Execute o terminal da sua maquina (```Pressione a tecla super🪟 e digite "terminal"```) e execute o seguinte comando
-
-```git clone https://github.com/heldjow/ImersaoDadosAlura```
-
-3. Crie o ambiente virtual
-
-```python3 -m venv venv```
-
-4. Ative o ambiente virtual em Windonws
-
-```.venv\Scripts\Activate```
-
-Em Linux/MacOS
-
-```source .venv/bin/activate```
-
-5. Crie um arquivo chamado requirements.txt e escreva o seguinte texto nele:
+Nesta primeira versão, a arquitetura utiliza um pipeline direto com Pandas:
 
 ```
-pandas==2.2.3
-streamlit==1.44.1
-plotly==5.24.1]
+Dados brutos → Pandas (ETL) → CSV tratado → Streamlit → Dashboard
 ```
 
-6. Instale as bibliotecas nescessárias
+Essa abordagem é simples, funcional e muito comum em projetos iniciais de análise de dados.
 
-```pip -install -r requirements```
+---
 
-7. Execute o código no ambiente virtual
+## 🚀 Evolução Planejada — v2.0
 
-```streamlit run app.py```
+A próxima etapa do projeto consiste em evoluir essa arquitetura para um modelo mais profissional utilizando:
 
-8. Realize o deploy na nuvem 
+- Banco de dados SQL para persistência
+- Separação entre ingestão, transformação e consumo
+- Modelagem Dimensional (Star Schema)
+- Consultas analíticas diretamente do banco no Streamlit
 
-Acesse o site do streamlit e associe a sua conta do github em deploy Free (Login with in github)
+O objetivo é demonstrar **por que a abordagem com Pandas funciona**, mas **por que uma arquitetura com banco de dados é mais escalável e organizada**.
 
-Create app (deploy a public app from github)
+---
 
-OBS: Nescessário ter Python e um editor de código na sua máquina.
+## ✨ Funcionalidades
 
-[Clique aqui para instalar o python](https://www.python.org/downloads/)
+- Limpeza e padronização de dados com Pandas
+- Tratamento de variáveis categóricas e quantitativas
+- Tradução e organização das informações da base
+- Análise exploratória dos dados
+- Dashboards interativos com filtros dinâmicos
+- Deploy em nuvem com Streamlit Cloud
 
-[Clique aqui para instalar o VsCode](https://code.visualstudio.com/download)
+---
+
+## 🗂️ Estrutura do Repositório
+
+```
+.
+├── app.py
+├── df_limpo.csv
+├── etl_colab.ipynb
+├── requirements.txt
+├── img/
+└── README.md
+```
+
+---
+
+## ✅ Pré-requisitos
+
+Para executar o projeto localmente é necessário ter instalado:
+
+- Python 3.10+
+- Git
+
+Opcional:
+- VSCode ou outro editor de código
+
+---
+
+## 🛠️ Como executar localmente
+
+### 1️⃣ Clone o repositório
+
+```bash
+git clone https://github.com/heldjow/ImersaoDadosAlura
+cd ImersaoDadosAlura
+```
+
+### 2️⃣ Crie o ambiente virtual
+
+Linux / Mac:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+Windows:
+
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+```
+
+### 3️⃣ Instale as dependências
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4️⃣ Execute a aplicação
+
+```bash
+streamlit run app.py
+```
+
+---
+
+## 🌐 Deploy da Aplicação
+
+O deploy pode ser feito gratuitamente utilizando o **Streamlit Cloud**:
+
+1. Acesse: https://streamlit.io/cloud
+2. Conecte sua conta do GitHub
+3. Selecione este repositório
+4. Informe o arquivo `app.py` como ponto de entrada
+
+---
+
+## 🧠 O que este projeto demonstra
+
+Este projeto evidencia conhecimentos em:
+
+- Processo completo de ETL com Pandas
+- Análise exploratória de dados
+- Construção de dashboards analíticos
+- Deploy de aplicações de dados
+- Organização de projeto e versionamento
+- Base para evolução para arquitetura SQL + Data Warehouse
+
+---
+
+## 🔖 Versionamento do Projeto
+
+- **v1.0** — Pipeline direto com Pandas e CSV tratado
+- **v2.0 (em desenvolvimento)** — Persistência em SQL + Modelagem Dimensional
+
+---
+
+## 📌 Observação
+
+Todo o processo de tratamento dos dados pode ser visualizado no notebook disponível no repositório (`etl_colab.ipynb`).
+
